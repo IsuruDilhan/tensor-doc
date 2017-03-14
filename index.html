@@ -1,0 +1,450 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Tensor Documentation</title>
+
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .cd {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all.js"></script>
+  </head>
+
+  <body class="index" data-languages="[]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar.png" alt="Navbar" />
+      </span>
+    </a>
+    <div class="tocify-wrapper">
+      <img src="images/logo.png" width="200" alt="Logo" />
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <div id="toc">
+      </div>
+        <ul class="toc-footer">
+            <li><a href='https://github.com/pearsonappeng/tensor'>Tensor</a></li>
+        </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="content">
+        <h1 id="home">Home</h1>
+
+<p><strong>What is Tensor?</strong></p>
+
+<p>Centralized infrastructure management REST API, based on ansible, provides role-based access control, job scheduling, inventory management.
+Currently, the REST API supports the only ansible. Our expectation is to support other CI-CD automation tools like Chef,Puppet in the near future.</p>
+
+<p><strong>Use Cases</strong></p>
+
+<ul>
+<li>Configuration Management</li>
+<li>Provisioning</li>
+<li>Code Deployments</li>
+<li>Continuous Integration &amp; Continuous Delivery</li>
+<li>Security &amp; Compliance</li>
+<li>Orchestration</li>
+</ul>
+
+          <h1 id="packaging">Packaging</h1>
+
+<h2 id="debian-packaging">Debian Packaging</h2>
+
+<p>To create an Ansible Debian DEB packages:</p>
+<pre class="highlight plaintext"><code>vagrant up debian
+vagrant ssh debian
+</code></pre>
+<p>After you ssh you should be automatically navigated into <code class="prettyprint">/go/src/github.com/pearsonappeng/tensor/</code> directory, If not change directory using <code class="prettyprint">cd /go/src/github.com/pearsonappeng/tensor/</code>.</p>
+
+<p><strong>Note</strong>: You must run this target as root or set <code class="prettyprint">export PBUILDER_BIN=&#39;sudo pbuilder&#39;</code></p>
+<pre class="highlight plaintext"><code>DEB_DIST='jessie' make deb
+</code></pre>
+<p>The debian package file will be placed in the <code class="prettyprint">deb-build</code> directory. This can then be added to an APT repository or installed with <code class="prettyprint">dpkg -i &lt;package-file&gt;</code>.</p>
+
+<p>Note that <code class="prettyprint">dpkg -i</code> does not resolve dependencies.</p>
+
+<p>To install the Tensor DEB package and resolve dependencies:</p>
+<pre class="highlight plaintext"><code>dpkg -i &lt;package-file&gt;
+apt-get -fy install
+</code></pre>
+<p>Or, if you are running Debian Stretch (or later):</p>
+<pre class="highlight plaintext"><code>apt install /path/to/&lt;package-file&gt;
+</code></pre>
+<p>To create an Ansible Ubuntu DEB packages:</p>
+<pre class="highlight plaintext"><code>vagrant up ubuntu --provider virtualbox
+vagrant ssh ubuntu
+</code></pre>
+<p>After you ssh you should be automatically navigated into <code class="prettyprint">/go/src/github.com/pearsonappeng/tensor/</code> directory, If not change directory using <code class="prettyprint">cd /go/src/github.com/pearsonappeng/tensor/</code>.</p>
+
+<p><strong>Note</strong>: You must run this target as root or set <code class="prettyprint">export PBUILDER_BIN=&#39;sudo pbuilder&#39;</code></p>
+<pre class="highlight plaintext"><code>DEB_DIST='xenial trusty precise' make deb
+</code></pre>
+<p>The debian package file will be placed in the <code class="prettyprint">deb-build</code> directory. This can then be added to an APT repository or installed with <code class="prettyprint">dpkg -i &lt;package-file&gt;</code>.</p>
+
+<p>Note that <code class="prettyprint">dpkg -i</code> does not resolve dependencies.</p>
+
+<p>To install the Tensor DEB package and resolve dependencies:</p>
+<pre class="highlight plaintext"><code>apt-get -fy install
+</code></pre>
+<p>Or, if you are running Ubuntu Xenial (or later):</p>
+<pre class="highlight plaintext"><code>apt install /path/to/&lt;package-file&gt;
+</code></pre>
+<h2 id="rpm-packaging">RPM Packaging</h2>
+
+<p>To create an Ansible RPM package:</p>
+<pre class="highlight plaintext"><code>vagrant up centos
+vagrant ssh centos
+</code></pre>
+<p>After you ssh you should be automatically navigated into <code class="prettyprint">/go/src/github.com/pearsonappeng/tensor/</code> directory, If not change directory using <code class="prettyprint">cd /go/src/github.com/pearsonappeng/tensor/</code>.</p>
+<pre class="highlight plaintext"><code>make rpm
+</code></pre>
+<p>The rpm package file will be placed in the <code class="prettyprint">rpm-build</code> directory. This can then be added to an RPM repository or installed with <code class="prettyprint">rpm -i &lt;package-file&gt;</code>.</p>
+
+<p>Note that <code class="prettyprint">rpm -i</code> does not resolve dependencies.</p>
+
+<p>To install the Tensor RPM package and resolve dependencies:</p>
+<pre class="highlight plaintext"><code>yum -y install
+</code></pre>
+<p>Or, if you are running Fedora 18 (or later):</p>
+<pre class="highlight plaintext"><code>dnf install /path/to/&lt;package-file&gt;
+</code></pre>
+<h2 id="building-docker">Building Docker</h2>
+
+<p><code class="prettyprint">vagrant up debian</code> <code class="prettyprint">vagrant up centos</code> or <code class="prettyprint">vagrant up ubuntu --provider virtualbox</code></p>
+
+<p>and </p>
+
+<p><code class="prettyprint">vagrant ssh [os]</code></p>
+
+<p>After you ssh you should be automatically navigated into <code class="prettyprint">/go/src/github.com/pearsonappeng/tensor/</code> directory, If not change directory using <code class="prettyprint">cd /go/src/github.com/pearsonappeng/tensor/</code>.</p>
+<pre class="highlight plaintext"><code>make build-docker-image
+</code></pre>
+          <h1 id="installation-instructions">Installation Instructions</h1>
+
+<h2 id="database">Database</h2>
+
+<h3 id="step-01-adding-the-mongodb-repository">Step 01 - Adding the MongoDB Repository</h3>
+
+<p>MongoDB is already included in Ubuntu package repositories, but the official MongoDB repository provides most up-to-date version and is the recommended way of installing the software and also we use latest stable MongoDB version to test the system.</p>
+
+<p>Import the key for the official MongoDB repository</p>
+<pre class="highlight shell"><code>sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927
+</code></pre>
+<p>Create a list file for MongoDB</p>
+<pre class="highlight shell"><code><span class="nb">echo</span> <span class="s2">"deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse"</span> | sudo tee /etc/apt/sources.list.d/mongodb-org-3.2.list
+</code></pre>
+<p>Update the packages list</p>
+<pre class="highlight shell"><code>sudo apt-get update
+</code></pre>
+<h3 id="step-2-installing-and-verifying-mongodb">Step 2 - Installing and Verifying MongoDB</h3>
+
+<p>Install the MongoDB package</p>
+<pre class="highlight shell"><code>sudo apt-get install -y mongodb-org
+</code></pre>
+<p>This command will install several packages containing latest stable version of MongoDB along with helpful management tools for the MongoDB server.</p>
+
+<p>Create Unit file</p>
+
+<p>In order to properly launch MongoDB as a service on Ubuntu 16.04, we additionally need to create a unit file describing the service. A unit file tells systemd how to manage a resource.</p>
+
+<p>We&rsquo;ll create a unit file to manage the MongoDB service. Create a configuration file named <strong>mongodb.service</strong> in the <strong>/etc/systemd/system_ directory</strong> using <strong>nano</strong> or your favorite text editor.</p>
+<pre class="highlight shell"><code>sudo nano /etc/systemd/system/mongodb.service
+</code></pre>
+<p>Paste in the following contents, then save and close the file.</p>
+<pre class="highlight plaintext"><code>[Unit]
+Description=High-performance, schema-free document-oriented database
+After=network.target
+
+[Service]
+User=mongodb
+ExecStart=/usr/bin/mongod --quiet --config /etc/mongod.conf
+
+[Install]
+WantedBy=multi-user.target
+</code></pre>
+<p>Next, Enable automatically starting MongoDB when the system starts.</p>
+<pre class="highlight shell"><code>sudo systemctl <span class="nb">enable </span>mongodb
+</code></pre>
+<p>Start the newly created service with <strong>systemctl</strong>.</p>
+<pre class="highlight shell"><code>sudo systemctl start mongodb
+</code></pre>
+<p>Use <strong>systemctl</strong> to check that the service has started properly.</p>
+<pre class="highlight shell"><code>sudo systemctl status mongodb
+</code></pre>
+<h3 id="step-03-configuration">Step 03 - Configuration</h3>
+
+<p><strong>Create database administrator account</strong></p>
+
+<p>Create a database administrative account with Built-In Role root. This account will be used when connecting to the database after enabling authentication on MongoDB.</p>
+<pre class="highlight javascript"><code><span class="nx">use</span> <span class="nx">admin</span><span class="p">;</span>
+<span class="nx">db</span><span class="p">.</span><span class="nx">createUser</span><span class="p">(</span>
+  <span class="p">{</span>
+    <span class="na">user</span><span class="p">:</span> <span class="s2">"admin"</span><span class="p">,</span>
+    <span class="na">pwd</span><span class="p">:</span> <span class="s2">"password"</span><span class="p">,</span>
+    <span class="na">roles</span><span class="p">:</span> <span class="p">[</span> <span class="p">{</span> <span class="na">role</span><span class="p">:</span> <span class="s2">"root"</span><span class="p">,</span> <span class="na">db</span><span class="p">:</span> <span class="s2">"admin"</span> <span class="p">}</span> <span class="p">]</span>
+  <span class="p">}</span>
+<span class="p">);</span>
+</code></pre>
+<p>Read <a href="https://docs.mongodb.com/manual/reference/built-in-roles/#root">Built-In Roles &ldquo;root&rdquo; — MongoDB Manual</a> for more information about &ldquo;root&rdquo; builtin role.</p>
+
+<p><strong>Create user account for Tensor</strong></p>
+
+<p>This account will be used by the Hilbert Space.</p>
+<pre class="highlight javascript"><code><span class="nx">use</span> <span class="nx">hilbertspace</span><span class="p">;</span>
+<span class="nx">db</span><span class="p">.</span><span class="nx">createUser</span><span class="p">(</span>
+  <span class="p">{</span>
+    <span class="na">user</span><span class="p">:</span> <span class="s2">"tensor"</span><span class="p">,</span>
+    <span class="na">pwd</span><span class="p">:</span> <span class="s2">"tensor"</span><span class="p">,</span>
+    <span class="na">db</span><span class="p">:</span> <span class="s2">"tensordb"</span><span class="p">,</span>
+    <span class="na">roles</span><span class="p">:</span> <span class="p">[</span> <span class="p">{</span> <span class="na">role</span><span class="p">:</span> <span class="s2">"dbOwner"</span><span class="p">,</span> <span class="na">db</span><span class="p">:</span> <span class="s2">"tensordb"</span> <span class="p">}</span> <span class="p">]</span>
+  <span class="p">}</span>
+<span class="p">);</span>
+</code></pre>
+<p>Read <a href="https://docs.mongodb.com/manual/reference/built-in-roles/#dbOwner">Built-In Roles &ldquo;dbOwner&rdquo; — MongoDB Manual</a> for more information about &ldquo;dbOwner&rdquo; builtin role. </p>
+
+<p>Tensor requires authentication to be enabled in MongoDB database.</p>
+
+<p>Open <strong>/etc/mongodb.conf</strong> using *<em>nano</em> or your favorite text editor.</p>
+<pre class="highlight shell"><code>sudo nano /etc/mongodb.conf
+</code></pre>
+<p>Uncomment <strong>security</strong> tag in configuration file and add <strong>authorization: enabled</strong> or replace it by following configuration values.</p>
+<pre class="highlight yaml"><code><span class="na">security</span><span class="pi">:</span>
+  <span class="na">authorization</span><span class="pi">:</span> <span class="s">enabled</span>
+</code></pre>
+<p>Below is the full configuration file we used in production and testing, to learn more information about configuration options please refer the official <a href="http://docs.mongodb.org/manual/reference/configuration-options/">documentation of all options</a>.</p>
+<pre class="highlight yaml"><code><span class="c1"># mongod.conf</span>
+
+<span class="c1"># Where and how to store data.</span>
+<span class="na">storage</span><span class="pi">:</span>
+  <span class="na">dbPath</span><span class="pi">:</span> <span class="s">/var/lib/mongodb</span>
+<span class="na">journal</span><span class="pi">:</span>
+  <span class="na">enabled</span><span class="pi">:</span> <span class="s">true</span>
+<span class="c1">#  engine:</span>
+<span class="c1">#  mmapv1:</span>
+<span class="c1">#  wiredTiger:</span>
+
+<span class="c1"># where to write logging data.</span>
+<span class="na">systemLog</span><span class="pi">:</span>
+  <span class="na">destination</span><span class="pi">:</span> <span class="s">file</span>
+<span class="na">logAppend</span><span class="pi">:</span> <span class="s">true</span>
+<span class="na">path</span><span class="pi">:</span> <span class="s">/var/log/mongodb/mongod.log</span>
+
+<span class="c1"># network interfaces</span>
+<span class="na">net</span><span class="pi">:</span>
+  <span class="na">port</span><span class="pi">:</span> <span class="s">27017</span>
+<span class="na">bindIp</span><span class="pi">:</span> <span class="s">0.0.0.0</span>
+
+
+<span class="c1">#processManagement:</span>
+
+<span class="na">security</span><span class="pi">:</span>
+  <span class="na">authorization</span><span class="pi">:</span> <span class="s">enabled</span>
+<span class="c1">#operationProfiling:</span>
+
+<span class="c1">#replication:</span>
+
+<span class="c1">#sharding:</span>
+
+<span class="c1">## Enterprise-Only Options:</span>
+
+<span class="c1">#auditLog:</span>
+
+<span class="c1">#snmp:</span>
+</code></pre>
+      </div>
+    </div>
+  </body>
+</html>
